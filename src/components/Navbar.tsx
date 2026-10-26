@@ -46,6 +46,17 @@ export function Navbar() {
             Books
           </Link>
 
+          <Link
+            href="/admin"
+            className={`text-xs font-semibold px-3 py-1.5 rounded-md transition-colors ${
+              pathname === '/admin'
+                ? 'bg-stone-100 text-stone-900 font-bold'
+                : 'text-stone-600 hover:text-stone-900'
+            }`}
+          >
+            Admin
+          </Link>
+
           <button
             onClick={handleReset}
             title="Reset test purchases"

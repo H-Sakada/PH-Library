@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -30,14 +31,13 @@ export function BookCard({ book }: BookCardProps) {
   return (
     <>
       <div className="flex flex-col overflow-hidden rounded-xl border border-stone-200 bg-white p-6 shadow-xs transition-shadow hover:shadow-md">
-        
+
         {/* Category & Status */}
         <div className="flex items-center justify-between pb-4">
-          <span className={`rounded px-2.5 py-0.5 text-xs font-semibold ${
-            book.category === 'Law' 
-              ? 'bg-blue-50 text-blue-700 border border-blue-200' 
+          <span className={`rounded px-2.5 py-0.5 text-xs font-semibold ${book.category === 'Law'
+              ? 'bg-blue-50 text-blue-700 border border-blue-200'
               : 'bg-stone-100 text-stone-700 border border-stone-200'
-          }`}>
+            }`}>
             {book.category}
           </span>
 

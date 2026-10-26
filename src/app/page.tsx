@@ -1,15 +1,30 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MOCK_BOOKS } from '@/lib/mock-data';
 import { BookCard } from '@/components/BookCard';
+import { Book } from '@/types/book';
 
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState<'All' | 'Law' | 'Economics'>('All');
+  const [books, setBooks] = useState<Book[]>(MOCK_BOOKS);
+
+  useEffect(() => {
+    fetch('/api/books/list')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.books && Array.isArray(data.books) && data.books.length > 0) {
+          setBooks(data.books);
+        }
+      })
+      .catch(() => {
+        // Fallback to MOCK_BOOKS
+      });
+  }, []);
 
   const categories: Array<'All' | 'Law' | 'Economics'> = ['All', 'Law', 'Economics'];
 
-  const filteredBooks = MOCK_BOOKS.filter((book) => {
+  const filteredBooks = books.filter((book) => {
     if (selectedCategory === 'All') return true;
     return book.category === selectedCategory;
   });
