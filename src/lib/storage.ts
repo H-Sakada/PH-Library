@@ -33,7 +33,7 @@ export function recordPurchase(
   bookId: string,
   amountUSD: number,
   amountKHR: number,
-  paymentMethod: 'aba_payway' | 'bakong_khqr' = 'aba_payway',
+  paymentMethod: 'aba_payway' = 'aba_payway',
   transactionId?: string
 ): Purchase {
   const purchases = getPurchases();

@@ -14,7 +14,7 @@ function Shell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50">
+    <div className="flex min-h-screen flex-col bg-stone-50 text-stone-900">
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
@@ -24,7 +24,7 @@ function Shell({ children }: { children: React.ReactNode }) {
 
 export function HeaderFooterWrapper({ children }: { children: React.ReactNode }) {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-slate-50 dark:bg-slate-950">{children}</div>}>
+    <Suspense fallback={<div className="min-h-screen bg-stone-50">{children}</div>}>
       <Shell>{children}</Shell>
     </Suspense>
   );
