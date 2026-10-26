@@ -20,12 +20,12 @@ export function Navbar() {
         
         {/* Title / Professor & University Name */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-white font-bold text-sm">
-            PH
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-white font-bold text-xs tracking-wider">
+            LP
           </div>
           <div>
             <span className="font-bold text-stone-900 text-base leading-tight block">
-              Dr. Peng Hong
+              Prof. Lay PengHong
             </span>
             <span className="text-xs text-stone-500 block">
               Royal University of Law and Economics (RULE)

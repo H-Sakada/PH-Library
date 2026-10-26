@@ -10,7 +10,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: 'cambodian-commercial-law',
     title: 'Cambodian Commercial Law & Business Regulations',
-    author: 'Dr. Peng Hong',
+    author: 'Prof. Lay PengHong',
     category: 'Law',
     priceUSD: 5.00,
     priceKHR: 20000,
@@ -119,7 +119,7 @@ export const MOCK_BOOKS: Book[] = [
   {
     id: 'applied-macroeconomics-cambodia',
     title: 'Applied Macroeconomics & Monetary Policy in Cambodia',
-    author: 'Dr. Peng Hong',
+    author: 'Prof. Lay PengHong',
     category: 'Economics',
     priceUSD: 4.00,
     priceKHR: 16000,

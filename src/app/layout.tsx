@@ -3,8 +3,8 @@ import './globals.css';
 import { HeaderFooterWrapper } from '@/components/HeaderFooterWrapper';
 
 export const metadata: Metadata = {
-  title: 'Peng Hong Digital Library | Protected Academic Books & ABA PayWay',
-  description: 'Digital textbook publishing portal with secure locked-PDF canvas reader, dynamic student watermarking, and instant ABA PayWay / KHQR payment activation.',
+  title: 'Prof. Lay PengHong | Course Books (RULE)',
+  description: 'Academic course books portal for Royal University of Law and Economics (RULE) by Prof. Lay PengHong.',
 };
 
 export default function RootLayout({
